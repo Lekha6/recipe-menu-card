@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0e1628;
+  color: white;
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.heading {
+  background: linear-gradient(90deg, #f63bca, #8b5cf6);
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+}
+
+.card-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.recipe-card {
+  background: #1f2937;
+  border-radius: 12px;
+  width: 420px;
+  padding: 15px;
+  text-align: left;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.6);
+  border: 1px solid #ff69b4;
+  background-color: #ff69b4; 
+  color: #fff;
+}
+
+.recipe-header {
+  background: #3bb2f6;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.recipe-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.recipe-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.recipe-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.recipe-info span {
+  background: #374151;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: background 0.3s ease;
+}
+
+.recipe-card:hover .recipe-info span {
+  background: rgba(255, 255, 255, 0.2); /* light overlay on pink */
+}
+
+.recipe-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 50px;
+  transition: transform 0.3s ease;
+  flex-direction: row;
+}
+
+.recipe-card:hover .recipe-img {
+  transform: scale(1.1);
+}
+.like-btn{
+
+  padding: 5px 10px;
+
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.like-btn:hover {
+  background-color: #13040b;
+}
+.front-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
